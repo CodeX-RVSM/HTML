@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            margin: 10px;
+            position: relative;
+            animation: square 5s infinite ease;
+
+            /* animation: sqare;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 4s;
+            animation-direction: reverse;
+            animation-direction: alternate;
+            animation-direction: alternate-reverse; */
+        }
+
+        #box1{
+            animation-timing-function: ease;
+            background-color: hotpink;
+        }
+        #box2{
+            animation-timing-function: ease-in;
+            background-color: red;
+        }
+        #box3{
+            animation-timing-function: ease-out;
+            background-color: brown;
+        }
+        #box4{
+            animation-timing-function: ease-in-out;
+            background-color: black;
+            color: white     ;
+        }
+        @keyframes square{
+            from{
+                left: 0px;
+            }
+            to{
+                left: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">ease</div>
+    <div class="box" id="box2">ease-in</div>
+    <div class="box" id="box3">ease-out</div>
+    <div class="box" id="box4">ease-in-out</div>
+</body>
+</html>
