@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .an1{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            position: relative;
+            animation: move1 ;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes move1{
+            from{
+                left: 0px;
+                background-color: hotpink;
+                transform: rotate(45deg);                
+            }
+            to{
+                left: 500px;
+                background-color: purple;
+                transform: rotate(86dec);
+            }
+        }
+        .move{
+            height: 100px;
+            width: 100px;
+            border: 20px solid;
+            border-radius: 50%;
+            border-bottom: none;
+            animation-name: move;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes move {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="an1"></div>
+    <div class="move"></div>
+</body>
+</html>
