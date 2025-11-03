@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 500px;
+            width: 500px;
+            /* background-color: black; */
+            background-image: linear-gradient(black,gray); 
+            position: static ;
+            margin-left: 400px;
+            margin-top: 50px;
+            border-radius: 50%;
+        
+
+        }
+        .child1{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            background-color: aqua;
+            margin-top: 100px;
+            margin-left: 100px;
+            border-radius: 50%;
+        }
+        
+        .child2{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            background-color: yellow;
+            margin-top: 100px;
+            margin-left: 320px;
+            border-radius: 50%;
+        }
+        .child3{
+            height: 40px;
+            width: 100px;
+            /* position: absolute; */
+            background-color: red;
+            margin-top: 350px;
+            margin-left: 200px;
+            border-radius: 30%;
+
+            position: absolute;
+            animation: mouth;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+           
+        }
+        @keyframes mouth 
+        {
+            0%, 100% {
+                height: 30px;
+            }
+            50% {
+                height: 60px;
+            }
+        }   
+
+        .eye1{
+            height: 30px;
+            width: 30px;
+            background-color: black;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 10px;
+
+            position: relative;
+            animation: move1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes move1
+         {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        /* {
+                0%{
+                    left: 0px;
+                    top:0px;
+                    background-color: black;
+                }
+                20%{
+                    left: 20px;
+                    top:10px;
+                    background-color: black;
+                }
+                40%{
+                    left: 30px;
+                    top:20px;
+                    background-color: black;
+                }
+                60%{
+                    left: 38px;
+                    top:30px;
+                    background-color: black;
+                }
+                80%{
+                    left: 10px;
+                    top:20px;
+                    background-color: black;
+                }
+                100%{
+                    left: 0px;
+                    top:10px;
+                    background-color: black;
+                }
+                
+            } */ 
+
+        .eye2{
+            height: 30px;
+            width: 30px;
+            background-color: black;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 10px;
+
+            position: relative;
+            animation: move2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes move1
+         {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+        /* @keyframes move2{
+                0%{
+                    left: 0px;
+                    top:0px;
+                    background-color: black;
+                }
+                20%{
+                    left: 20px;
+                    top:10px;
+                    background-color: black;
+                }
+                40%{
+                    left: 30px;
+                    top:20px;
+                    background-color: black;
+                }
+                60%{
+                    left: 38px;
+                    top:30px;
+                    background-color: black;
+                }
+                80%{
+                    left: 10px;
+                    top:20px;
+                    background-color: black;
+                }
+                100%{
+                    left: 0px;
+                    top:10px;
+                    background-color: black;
+                }
+                
+            } */
+
+        
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="child1">
+            <div class="eye1"></div>
+        </div>
+        <div class="child2">
+            <div class="eye2"></div>
+        </div>
+        <div class="child3"></div>
+    </div>
+</body>
+</html>
